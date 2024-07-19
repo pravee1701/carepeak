@@ -1,36 +1,89 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# CarePeak: Healthcare Management System
+
+CarePeak is a comprehensive healthcare management system built with Next.js, Shadcn UI, Appwrite, and Twilio. It streamlines patient registration, appointment scheduling, and administrative tasks.
+
+## Features
+
+- Patient registration and management
+- Appointment scheduling and cancellation
+- Admin dashboard for managing appointments
+- SMS notifications via Twilio
+- Form validation using Zod
+- Responsive UI with Shadcn UI components
+
+## Tech Stack
+
+- [Next.js]- React framework for building web applications
+- [Shadcn UI]- Customizable UI components
+- [Appwrite]- Backend server for authentication and database
+- [Twilio]- SMS notifications for appointments
+- [Zod]- TypeScript-first schema validation
+
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+https://github.com/pravee1701/carepeak.git
 ```
+2. Install dependencies:
+```bash
+cd carePeak
+npm install
+```
+3. Set up environment variables:
+Create a `.env.local` file in the root directory and add the following:
+```bash
+PROJECT_ID="your-project-id"
+API_KEY="your-api-key"
+DATABASE_ID="your-db-id"
+PATIENT_COLLECTION_ID="your-patient-collection-id"
+DOCTOR_COLLECTION_ID="your-docor-collection-id"
+APPOINTMENT_COLLECTION_ID="your-appointment-collection-id"
+NEXT_PUBLIC_BUCKET_ID="your-public-bucket-id"
+NEXT_PUBLIC_ENDPOINT="your-cloud-endpoint"
+NEXT_PUBLIC_ADMIN_PASSKEY="admin-passkey"
+```
+4. Run the development server:
+```bash
+npm run dev
+```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Patient Registration
+- Patients can create accounts and manage their profiles
+- Form validation ensures accurate data entry
 
-## Learn More
+### Appointment Scheduling
+- Patients can view available time slots and book appointments
+- Admins can manage the appointment calendar
 
-To learn more about Next.js, take a look at the following resources:
+### Admin Dashboard
+- View and manage all appointments
+- Cancel appointments with reason logging
+- Access patient information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Notifications
+- SMS notifications for appointment confirmations, reminders, and cancellations
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+1. Choose a hosting platform (e.g., Vercel, Netlify)
+2. Connect your GitHub repository
+3. Set up environment variables in the hosting platform
+4. Deploy the application
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
